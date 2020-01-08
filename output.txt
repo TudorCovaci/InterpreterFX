@@ -1,0 +1,1533 @@
+ - - - - - - - - - -
+Program state [ID:1 ]:
+Execution stack:
+int v;v=2;print(v)
+
+Symbol table:
+
+Output:
+
+File Table:
+
+Heap:
+
+ - - - - - - - - - -
+Program state [ID:1 ]:
+Execution stack:
+v=2;print(v)
+int v
+
+Symbol table:
+
+Output:
+
+File Table:
+
+Heap:
+
+ - - - - - - - - - -
+Program state [ID:1 ]:
+Execution stack:
+v=2;print(v)
+int v
+
+Symbol table:
+
+Output:
+
+File Table:
+
+Heap:
+
+ - - - - - - - - - -
+Program state [ID:1 ]:
+Execution stack:
+int v;v=2;print(v)
+
+Symbol table:
+
+Output:
+
+File Table:
+
+Heap:
+
+ - - - - - - - - - -
+Program state [ID:1 ]:
+Execution stack:
+v=2;print(v)
+int v
+
+Symbol table:
+
+Output:
+
+File Table:
+
+Heap:
+
+ - - - - - - - - - -
+Program state [ID:1 ]:
+Execution stack:
+v=2;print(v)
+int v
+
+Symbol table:
+
+Output:
+
+File Table:
+
+Heap:
+
+ - - - - - - - - - -
+Program state [ID:1 ]:
+Execution stack:
+v=2;print(v)
+
+Symbol table:
+v = 0
+
+Output:
+
+File Table:
+
+Heap:
+
+ - - - - - - - - - -
+Program state [ID:1 ]:
+Execution stack:
+v=2;print(v)
+
+Symbol table:
+v = 0
+
+Output:
+
+File Table:
+
+Heap:
+
+ - - - - - - - - - -
+Program state [ID:1 ]:
+Execution stack:
+print(v)
+v=2
+
+Symbol table:
+v = 0
+
+Output:
+
+File Table:
+
+Heap:
+
+ - - - - - - - - - -
+Program state [ID:1 ]:
+Execution stack:
+print(v)
+v=2
+
+Symbol table:
+v = 0
+
+Output:
+
+File Table:
+
+Heap:
+
+ - - - - - - - - - -
+Program state [ID:1 ]:
+Execution stack:
+print(v)
+
+Symbol table:
+v = 2
+
+Output:
+
+File Table:
+
+Heap:
+
+ - - - - - - - - - -
+Program state [ID:1 ]:
+Execution stack:
+print(v)
+
+Symbol table:
+v = 2
+
+Output:
+
+File Table:
+
+Heap:
+
+ - - - - - - - - - -
+Program state [ID:1 ]:
+Execution stack:
+
+Symbol table:
+v = 2
+
+Output:
+2
+
+File Table:
+
+Heap:
+
+ - - - - - - - - - -
+Program state [ID:1 ]:
+Execution stack:
+int v;Ref(int) a;v=10;new(a 22);fork(WriteHeap(a, 30);v=32;print(v);print(HeapRead(a)));print(v);print(HeapRead(a))
+
+Symbol table:
+
+Output:
+
+File Table:
+
+Heap:
+
+ - - - - - - - - - -
+Program state [ID:1 ]:
+Execution stack:
+Ref(int) a;v=10;new(a 22);fork(WriteHeap(a, 30);v=32;print(v);print(HeapRead(a)));print(v);print(HeapRead(a))
+int v
+
+Symbol table:
+
+Output:
+
+File Table:
+
+Heap:
+
+ - - - - - - - - - -
+Program state [ID:1 ]:
+Execution stack:
+Ref(int) a;v=10;new(a 22);fork(WriteHeap(a, 30);v=32;print(v);print(HeapRead(a)));print(v);print(HeapRead(a))
+int v
+
+Symbol table:
+
+Output:
+
+File Table:
+
+Heap:
+
+ - - - - - - - - - -
+Program state [ID:1 ]:
+Execution stack:
+Ref(int) a;v=10;new(a 22);fork(WriteHeap(a, 30);v=32;print(v);print(HeapRead(a)));print(v);print(HeapRead(a))
+
+Symbol table:
+v = 0
+
+Output:
+
+File Table:
+
+Heap:
+
+ - - - - - - - - - -
+Program state [ID:1 ]:
+Execution stack:
+Ref(int) a;v=10;new(a 22);fork(WriteHeap(a, 30);v=32;print(v);print(HeapRead(a)));print(v);print(HeapRead(a))
+
+Symbol table:
+v = 0
+
+Output:
+
+File Table:
+
+Heap:
+
+ - - - - - - - - - -
+Program state [ID:1 ]:
+Execution stack:
+v=10;new(a 22);fork(WriteHeap(a, 30);v=32;print(v);print(HeapRead(a)));print(v);print(HeapRead(a))
+Ref(int) a
+
+Symbol table:
+v = 0
+
+Output:
+
+File Table:
+
+Heap:
+
+ - - - - - - - - - -
+Program state [ID:1 ]:
+Execution stack:
+v=10;new(a 22);fork(WriteHeap(a, 30);v=32;print(v);print(HeapRead(a)));print(v);print(HeapRead(a))
+Ref(int) a
+
+Symbol table:
+v = 0
+
+Output:
+
+File Table:
+
+Heap:
+
+ - - - - - - - - - -
+Program state [ID:1 ]:
+Execution stack:
+v=10;new(a 22);fork(WriteHeap(a, 30);v=32;print(v);print(HeapRead(a)));print(v);print(HeapRead(a))
+
+Symbol table:
+a = 0 int
+v = 0
+
+Output:
+
+File Table:
+
+Heap:
+
+ - - - - - - - - - -
+Program state [ID:1 ]:
+Execution stack:
+v=10;new(a 22);fork(WriteHeap(a, 30);v=32;print(v);print(HeapRead(a)));print(v);print(HeapRead(a))
+
+Symbol table:
+a = 0 int
+v = 0
+
+Output:
+
+File Table:
+
+Heap:
+
+ - - - - - - - - - -
+Program state [ID:1 ]:
+Execution stack:
+new(a 22);fork(WriteHeap(a, 30);v=32;print(v);print(HeapRead(a)));print(v);print(HeapRead(a))
+v=10
+
+Symbol table:
+a = 0 int
+v = 0
+
+Output:
+
+File Table:
+
+Heap:
+
+ - - - - - - - - - -
+Program state [ID:1 ]:
+Execution stack:
+new(a 22);fork(WriteHeap(a, 30);v=32;print(v);print(HeapRead(a)));print(v);print(HeapRead(a))
+v=10
+
+Symbol table:
+a = 0 int
+v = 0
+
+Output:
+
+File Table:
+
+Heap:
+
+ - - - - - - - - - -
+Program state [ID:1 ]:
+Execution stack:
+new(a 22);fork(WriteHeap(a, 30);v=32;print(v);print(HeapRead(a)));print(v);print(HeapRead(a))
+
+Symbol table:
+a = 0 int
+v = 10
+
+Output:
+
+File Table:
+
+Heap:
+
+ - - - - - - - - - -
+Program state [ID:1 ]:
+Execution stack:
+new(a 22);fork(WriteHeap(a, 30);v=32;print(v);print(HeapRead(a)));print(v);print(HeapRead(a))
+
+Symbol table:
+a = 0 int
+v = 10
+
+Output:
+
+File Table:
+
+Heap:
+
+ - - - - - - - - - -
+Program state [ID:1 ]:
+Execution stack:
+fork(WriteHeap(a, 30);v=32;print(v);print(HeapRead(a)));print(v);print(HeapRead(a))
+new(a 22)
+
+Symbol table:
+a = 0 int
+v = 10
+
+Output:
+
+File Table:
+
+Heap:
+
+ - - - - - - - - - -
+Program state [ID:1 ]:
+Execution stack:
+fork(WriteHeap(a, 30);v=32;print(v);print(HeapRead(a)));print(v);print(HeapRead(a))
+new(a 22)
+
+Symbol table:
+a = 0 int
+v = 10
+
+Output:
+
+File Table:
+
+Heap:
+
+ - - - - - - - - - -
+Program state [ID:1 ]:
+Execution stack:
+fork(WriteHeap(a, 30);v=32;print(v);print(HeapRead(a)));print(v);print(HeapRead(a))
+
+Symbol table:
+a = 1 int
+v = 10
+
+Output:
+
+File Table:
+
+Heap:
+1 -> 22
+
+ - - - - - - - - - -
+Program state [ID:1 ]:
+Execution stack:
+fork(WriteHeap(a, 30);v=32;print(v);print(HeapRead(a)));print(v);print(HeapRead(a))
+
+Symbol table:
+a = 1 int
+v = 10
+
+Output:
+
+File Table:
+
+Heap:
+1 -> 22
+
+ - - - - - - - - - -
+Program state [ID:1 ]:
+Execution stack:
+print(v);print(HeapRead(a))
+fork(WriteHeap(a, 30);v=32;print(v);print(HeapRead(a)))
+
+Symbol table:
+a = 1 int
+v = 10
+
+Output:
+
+File Table:
+
+Heap:
+1 -> 22
+
+ - - - - - - - - - -
+Program state [ID:1 ]:
+Execution stack:
+print(v);print(HeapRead(a))
+fork(WriteHeap(a, 30);v=32;print(v);print(HeapRead(a)))
+
+Symbol table:
+a = 1 int
+v = 10
+
+Output:
+
+File Table:
+
+Heap:
+1 -> 22
+
+ - - - - - - - - - -
+Program state [ID:1 ]:
+Execution stack:
+print(v);print(HeapRead(a))
+
+Symbol table:
+a = 1 int
+v = 10
+
+Output:
+
+File Table:
+
+Heap:
+1 -> 22
+
+ - - - - - - - - - -
+Program state [ID:2 ]:
+Execution stack:
+WriteHeap(a, 30);v=32;print(v);print(HeapRead(a))
+
+Symbol table:
+a = 1 int
+v = 10
+
+Output:
+
+File Table:
+
+Heap:
+1 -> 22
+
+ - - - - - - - - - -
+Program state [ID:1 ]:
+Execution stack:
+print(v);print(HeapRead(a))
+
+Symbol table:
+a = 1 int
+v = 10
+
+Output:
+
+File Table:
+
+Heap:
+1 -> 22
+
+ - - - - - - - - - -
+Program state [ID:2 ]:
+Execution stack:
+WriteHeap(a, 30);v=32;print(v);print(HeapRead(a))
+
+Symbol table:
+a = 1 int
+v = 10
+
+Output:
+
+File Table:
+
+Heap:
+1 -> 22
+
+ - - - - - - - - - -
+Program state [ID:1 ]:
+Execution stack:
+print(HeapRead(a))
+print(v)
+
+Symbol table:
+a = 1 int
+v = 10
+
+Output:
+
+File Table:
+
+Heap:
+1 -> 22
+
+ - - - - - - - - - -
+Program state [ID:2 ]:
+Execution stack:
+v=32;print(v);print(HeapRead(a))
+WriteHeap(a, 30)
+
+Symbol table:
+a = 1 int
+v = 10
+
+Output:
+
+File Table:
+
+Heap:
+1 -> 22
+
+ - - - - - - - - - -
+Program state [ID:1 ]:
+Execution stack:
+print(HeapRead(a))
+print(v)
+
+Symbol table:
+a = 1 int
+v = 10
+
+Output:
+
+File Table:
+
+Heap:
+1 -> 22
+
+ - - - - - - - - - -
+Program state [ID:2 ]:
+Execution stack:
+v=32;print(v);print(HeapRead(a))
+WriteHeap(a, 30)
+
+Symbol table:
+a = 1 int
+v = 10
+
+Output:
+
+File Table:
+
+Heap:
+1 -> 22
+
+ - - - - - - - - - -
+Program state [ID:1 ]:
+Execution stack:
+print(HeapRead(a))
+
+Symbol table:
+a = 1 int
+v = 10
+
+Output:
+10
+
+File Table:
+
+Heap:
+1 -> 30
+
+ - - - - - - - - - -
+Program state [ID:2 ]:
+Execution stack:
+v=32;print(v);print(HeapRead(a))
+
+Symbol table:
+a = 1 int
+v = 10
+
+Output:
+10
+
+File Table:
+
+Heap:
+1 -> 30
+
+ - - - - - - - - - -
+Program state [ID:1 ]:
+Execution stack:
+print(HeapRead(a))
+
+Symbol table:
+a = 1 int
+v = 10
+
+Output:
+10
+
+File Table:
+
+Heap:
+1 -> 30
+
+ - - - - - - - - - -
+Program state [ID:2 ]:
+Execution stack:
+v=32;print(v);print(HeapRead(a))
+
+Symbol table:
+a = 1 int
+v = 10
+
+Output:
+10
+
+File Table:
+
+Heap:
+1 -> 30
+
+ - - - - - - - - - -
+Program state [ID:1 ]:
+Execution stack:
+
+Symbol table:
+a = 1 int
+v = 10
+
+Output:
+10
+30
+
+File Table:
+
+Heap:
+1 -> 30
+
+ - - - - - - - - - -
+Program state [ID:2 ]:
+Execution stack:
+print(v);print(HeapRead(a))
+v=32
+
+Symbol table:
+a = 1 int
+v = 10
+
+Output:
+10
+30
+
+File Table:
+
+Heap:
+1 -> 30
+
+ - - - - - - - - - -
+Program state [ID:2 ]:
+Execution stack:
+print(v);print(HeapRead(a))
+v=32
+
+Symbol table:
+a = 1 int
+v = 10
+
+Output:
+10
+30
+
+File Table:
+
+Heap:
+1 -> 30
+
+ - - - - - - - - - -
+Program state [ID:2 ]:
+Execution stack:
+print(v);print(HeapRead(a))
+
+Symbol table:
+a = 1 int
+v = 32
+
+Output:
+10
+30
+
+File Table:
+
+Heap:
+1 -> 30
+
+ - - - - - - - - - -
+Program state [ID:2 ]:
+Execution stack:
+print(v);print(HeapRead(a))
+
+Symbol table:
+a = 1 int
+v = 32
+
+Output:
+10
+30
+
+File Table:
+
+Heap:
+1 -> 30
+
+ - - - - - - - - - -
+Program state [ID:2 ]:
+Execution stack:
+print(HeapRead(a))
+print(v)
+
+Symbol table:
+a = 1 int
+v = 32
+
+Output:
+10
+30
+
+File Table:
+
+Heap:
+1 -> 30
+
+ - - - - - - - - - -
+Program state [ID:2 ]:
+Execution stack:
+print(HeapRead(a))
+print(v)
+
+Symbol table:
+a = 1 int
+v = 32
+
+Output:
+10
+30
+
+File Table:
+
+Heap:
+1 -> 30
+
+ - - - - - - - - - -
+Program state [ID:2 ]:
+Execution stack:
+print(HeapRead(a))
+
+Symbol table:
+a = 1 int
+v = 32
+
+Output:
+10
+30
+32
+
+File Table:
+
+Heap:
+1 -> 30
+
+ - - - - - - - - - -
+Program state [ID:2 ]:
+Execution stack:
+print(HeapRead(a))
+
+Symbol table:
+a = 1 int
+v = 32
+
+Output:
+10
+30
+32
+
+File Table:
+
+Heap:
+1 -> 30
+
+ - - - - - - - - - -
+Program state [ID:2 ]:
+Execution stack:
+
+Symbol table:
+a = 1 int
+v = 32
+
+Output:
+10
+30
+32
+30
+
+File Table:
+
+Heap:
+1 -> 30
+
+ - - - - - - - - - -
+Program state [ID:1 ]:
+Execution stack:
+int v;Ref(int) a;v=10;new(a 22);fork(WriteHeap(a, 30);v=32;print(v);print(HeapRead(a)));print(v);print(HeapRead(a))
+
+Symbol table:
+
+Output:
+
+File Table:
+
+Heap:
+
+ - - - - - - - - - -
+Program state [ID:1 ]:
+Execution stack:
+Ref(int) a;v=10;new(a 22);fork(WriteHeap(a, 30);v=32;print(v);print(HeapRead(a)));print(v);print(HeapRead(a))
+int v
+
+Symbol table:
+
+Output:
+
+File Table:
+
+Heap:
+
+ - - - - - - - - - -
+Program state [ID:1 ]:
+Execution stack:
+Ref(int) a;v=10;new(a 22);fork(WriteHeap(a, 30);v=32;print(v);print(HeapRead(a)));print(v);print(HeapRead(a))
+int v
+
+Symbol table:
+
+Output:
+
+File Table:
+
+Heap:
+
+ - - - - - - - - - -
+Program state [ID:1 ]:
+Execution stack:
+Ref(int) a;v=10;new(a 22);fork(WriteHeap(a, 30);v=32;print(v);print(HeapRead(a)));print(v);print(HeapRead(a))
+
+Symbol table:
+v = 0
+
+Output:
+
+File Table:
+
+Heap:
+
+ - - - - - - - - - -
+Program state [ID:1 ]:
+Execution stack:
+Ref(int) a;v=10;new(a 22);fork(WriteHeap(a, 30);v=32;print(v);print(HeapRead(a)));print(v);print(HeapRead(a))
+
+Symbol table:
+v = 0
+
+Output:
+
+File Table:
+
+Heap:
+
+ - - - - - - - - - -
+Program state [ID:1 ]:
+Execution stack:
+v=10;new(a 22);fork(WriteHeap(a, 30);v=32;print(v);print(HeapRead(a)));print(v);print(HeapRead(a))
+Ref(int) a
+
+Symbol table:
+v = 0
+
+Output:
+
+File Table:
+
+Heap:
+
+ - - - - - - - - - -
+Program state [ID:1 ]:
+Execution stack:
+v=10;new(a 22);fork(WriteHeap(a, 30);v=32;print(v);print(HeapRead(a)));print(v);print(HeapRead(a))
+Ref(int) a
+
+Symbol table:
+v = 0
+
+Output:
+
+File Table:
+
+Heap:
+
+ - - - - - - - - - -
+Program state [ID:1 ]:
+Execution stack:
+v=10;new(a 22);fork(WriteHeap(a, 30);v=32;print(v);print(HeapRead(a)));print(v);print(HeapRead(a))
+
+Symbol table:
+a = 0 int
+v = 0
+
+Output:
+
+File Table:
+
+Heap:
+
+ - - - - - - - - - -
+Program state [ID:1 ]:
+Execution stack:
+v=10;new(a 22);fork(WriteHeap(a, 30);v=32;print(v);print(HeapRead(a)));print(v);print(HeapRead(a))
+
+Symbol table:
+a = 0 int
+v = 0
+
+Output:
+
+File Table:
+
+Heap:
+
+ - - - - - - - - - -
+Program state [ID:1 ]:
+Execution stack:
+new(a 22);fork(WriteHeap(a, 30);v=32;print(v);print(HeapRead(a)));print(v);print(HeapRead(a))
+v=10
+
+Symbol table:
+a = 0 int
+v = 0
+
+Output:
+
+File Table:
+
+Heap:
+
+ - - - - - - - - - -
+Program state [ID:1 ]:
+Execution stack:
+new(a 22);fork(WriteHeap(a, 30);v=32;print(v);print(HeapRead(a)));print(v);print(HeapRead(a))
+v=10
+
+Symbol table:
+a = 0 int
+v = 0
+
+Output:
+
+File Table:
+
+Heap:
+
+ - - - - - - - - - -
+Program state [ID:1 ]:
+Execution stack:
+new(a 22);fork(WriteHeap(a, 30);v=32;print(v);print(HeapRead(a)));print(v);print(HeapRead(a))
+
+Symbol table:
+a = 0 int
+v = 10
+
+Output:
+
+File Table:
+
+Heap:
+
+ - - - - - - - - - -
+Program state [ID:1 ]:
+Execution stack:
+new(a 22);fork(WriteHeap(a, 30);v=32;print(v);print(HeapRead(a)));print(v);print(HeapRead(a))
+
+Symbol table:
+a = 0 int
+v = 10
+
+Output:
+
+File Table:
+
+Heap:
+
+ - - - - - - - - - -
+Program state [ID:1 ]:
+Execution stack:
+fork(WriteHeap(a, 30);v=32;print(v);print(HeapRead(a)));print(v);print(HeapRead(a))
+new(a 22)
+
+Symbol table:
+a = 0 int
+v = 10
+
+Output:
+
+File Table:
+
+Heap:
+
+ - - - - - - - - - -
+Program state [ID:1 ]:
+Execution stack:
+fork(WriteHeap(a, 30);v=32;print(v);print(HeapRead(a)));print(v);print(HeapRead(a))
+new(a 22)
+
+Symbol table:
+a = 0 int
+v = 10
+
+Output:
+
+File Table:
+
+Heap:
+
+ - - - - - - - - - -
+Program state [ID:1 ]:
+Execution stack:
+fork(WriteHeap(a, 30);v=32;print(v);print(HeapRead(a)));print(v);print(HeapRead(a))
+
+Symbol table:
+a = 1 int
+v = 10
+
+Output:
+
+File Table:
+
+Heap:
+1 -> 22
+
+ - - - - - - - - - -
+Program state [ID:1 ]:
+Execution stack:
+fork(WriteHeap(a, 30);v=32;print(v);print(HeapRead(a)));print(v);print(HeapRead(a))
+
+Symbol table:
+a = 1 int
+v = 10
+
+Output:
+
+File Table:
+
+Heap:
+1 -> 22
+
+ - - - - - - - - - -
+Program state [ID:1 ]:
+Execution stack:
+print(v);print(HeapRead(a))
+fork(WriteHeap(a, 30);v=32;print(v);print(HeapRead(a)))
+
+Symbol table:
+a = 1 int
+v = 10
+
+Output:
+
+File Table:
+
+Heap:
+1 -> 22
+
+ - - - - - - - - - -
+Program state [ID:1 ]:
+Execution stack:
+print(v);print(HeapRead(a))
+fork(WriteHeap(a, 30);v=32;print(v);print(HeapRead(a)))
+
+Symbol table:
+a = 1 int
+v = 10
+
+Output:
+
+File Table:
+
+Heap:
+1 -> 22
+
+ - - - - - - - - - -
+Program state [ID:1 ]:
+Execution stack:
+print(v);print(HeapRead(a))
+
+Symbol table:
+a = 1 int
+v = 10
+
+Output:
+
+File Table:
+
+Heap:
+1 -> 22
+
+ - - - - - - - - - -
+Program state [ID:2 ]:
+Execution stack:
+WriteHeap(a, 30);v=32;print(v);print(HeapRead(a))
+
+Symbol table:
+a = 1 int
+v = 10
+
+Output:
+
+File Table:
+
+Heap:
+1 -> 22
+
+ - - - - - - - - - -
+Program state [ID:1 ]:
+Execution stack:
+print(v);print(HeapRead(a))
+
+Symbol table:
+a = 1 int
+v = 10
+
+Output:
+
+File Table:
+
+Heap:
+1 -> 22
+
+ - - - - - - - - - -
+Program state [ID:2 ]:
+Execution stack:
+WriteHeap(a, 30);v=32;print(v);print(HeapRead(a))
+
+Symbol table:
+a = 1 int
+v = 10
+
+Output:
+
+File Table:
+
+Heap:
+1 -> 22
+
+ - - - - - - - - - -
+Program state [ID:1 ]:
+Execution stack:
+print(HeapRead(a))
+print(v)
+
+Symbol table:
+a = 1 int
+v = 10
+
+Output:
+
+File Table:
+
+Heap:
+1 -> 22
+
+ - - - - - - - - - -
+Program state [ID:2 ]:
+Execution stack:
+v=32;print(v);print(HeapRead(a))
+WriteHeap(a, 30)
+
+Symbol table:
+a = 1 int
+v = 10
+
+Output:
+
+File Table:
+
+Heap:
+1 -> 22
+
+ - - - - - - - - - -
+Program state [ID:1 ]:
+Execution stack:
+print(HeapRead(a))
+print(v)
+
+Symbol table:
+a = 1 int
+v = 10
+
+Output:
+
+File Table:
+
+Heap:
+1 -> 22
+
+ - - - - - - - - - -
+Program state [ID:2 ]:
+Execution stack:
+v=32;print(v);print(HeapRead(a))
+WriteHeap(a, 30)
+
+Symbol table:
+a = 1 int
+v = 10
+
+Output:
+
+File Table:
+
+Heap:
+1 -> 22
+
+ - - - - - - - - - -
+Program state [ID:1 ]:
+Execution stack:
+print(HeapRead(a))
+
+Symbol table:
+a = 1 int
+v = 10
+
+Output:
+10
+
+File Table:
+
+Heap:
+1 -> 30
+
+ - - - - - - - - - -
+Program state [ID:2 ]:
+Execution stack:
+v=32;print(v);print(HeapRead(a))
+
+Symbol table:
+a = 1 int
+v = 10
+
+Output:
+10
+
+File Table:
+
+Heap:
+1 -> 30
+
+ - - - - - - - - - -
+Program state [ID:1 ]:
+Execution stack:
+print(HeapRead(a))
+
+Symbol table:
+a = 1 int
+v = 10
+
+Output:
+10
+
+File Table:
+
+Heap:
+1 -> 30
+
+ - - - - - - - - - -
+Program state [ID:2 ]:
+Execution stack:
+v=32;print(v);print(HeapRead(a))
+
+Symbol table:
+a = 1 int
+v = 10
+
+Output:
+10
+
+File Table:
+
+Heap:
+1 -> 30
+
+ - - - - - - - - - -
+Program state [ID:1 ]:
+Execution stack:
+
+Symbol table:
+a = 1 int
+v = 10
+
+Output:
+10
+30
+
+File Table:
+
+Heap:
+1 -> 30
+
+ - - - - - - - - - -
+Program state [ID:2 ]:
+Execution stack:
+print(v);print(HeapRead(a))
+v=32
+
+Symbol table:
+a = 1 int
+v = 10
+
+Output:
+10
+30
+
+File Table:
+
+Heap:
+1 -> 30
+
+ - - - - - - - - - -
+Program state [ID:2 ]:
+Execution stack:
+print(v);print(HeapRead(a))
+v=32
+
+Symbol table:
+a = 1 int
+v = 10
+
+Output:
+10
+30
+
+File Table:
+
+Heap:
+1 -> 30
+
+ - - - - - - - - - -
+Program state [ID:2 ]:
+Execution stack:
+print(v);print(HeapRead(a))
+
+Symbol table:
+a = 1 int
+v = 32
+
+Output:
+10
+30
+
+File Table:
+
+Heap:
+1 -> 30
+
+ - - - - - - - - - -
+Program state [ID:2 ]:
+Execution stack:
+print(v);print(HeapRead(a))
+
+Symbol table:
+a = 1 int
+v = 32
+
+Output:
+10
+30
+
+File Table:
+
+Heap:
+1 -> 30
+
+ - - - - - - - - - -
+Program state [ID:2 ]:
+Execution stack:
+print(HeapRead(a))
+print(v)
+
+Symbol table:
+a = 1 int
+v = 32
+
+Output:
+10
+30
+
+File Table:
+
+Heap:
+1 -> 30
+
+ - - - - - - - - - -
+Program state [ID:2 ]:
+Execution stack:
+print(HeapRead(a))
+print(v)
+
+Symbol table:
+a = 1 int
+v = 32
+
+Output:
+10
+30
+
+File Table:
+
+Heap:
+1 -> 30
+
+ - - - - - - - - - -
+Program state [ID:2 ]:
+Execution stack:
+print(HeapRead(a))
+
+Symbol table:
+a = 1 int
+v = 32
+
+Output:
+10
+30
+32
+
+File Table:
+
+Heap:
+1 -> 30
+
+ - - - - - - - - - -
+Program state [ID:2 ]:
+Execution stack:
+print(HeapRead(a))
+
+Symbol table:
+a = 1 int
+v = 32
+
+Output:
+10
+30
+32
+
+File Table:
+
+Heap:
+1 -> 30
+
+ - - - - - - - - - -
+Program state [ID:2 ]:
+Execution stack:
+
+Symbol table:
+a = 1 int
+v = 32
+
+Output:
+10
+30
+32
+30
+
+File Table:
+
+Heap:
+1 -> 30
+
+111111111122221111111111111111111111111111111111111111111111111111111111111111111121212121212122222222211111111111111111111112211111111111111111111111111111111111111111111111111212121212121222222222111111111111111111111111111111111111111111111111111111111111111111111111
