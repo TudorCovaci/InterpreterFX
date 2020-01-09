@@ -1,10 +1,12 @@
 package View;
 
 import Model.Exceptions.ProgramException;
+import Model.ProgramState.Dictionary;
 import Model.ProgramState.Heap;
 import Model.ProgramState.PrgState;
 import Model.ProgramState.SymTable;
 import Model.Statements.IStmt;
+import Model.Types.Type;
 import Model.Values.StringValue;
 import Model.Values.Value;
 import Repository.RepoInterface;
@@ -22,6 +24,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Objects;
 import java.util.concurrent.Callable;
+import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.stream.Collectors;
@@ -57,15 +60,10 @@ public class Controller {
     private ListView<StringValue> fileTableListView;
     @FXML
     private ListView<PrgState> prgStatesListView;
-    @FXML
-    private Label errorLabel;
 
-    @FXML
-    private Button closeButton;
 
     private Stage mainStage;
 
-    private Stage errorStage;
 
     public Controller(SelectController selectController) {
 
@@ -75,7 +73,7 @@ public class Controller {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("MainWindow2.fxml"));
             loader.setController(this);
             Scene scene = new Scene(loader.load());
-
+            scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
             mainStage.setScene(scene);
             mainStage.setTitle("Toy language");
 
@@ -100,7 +98,19 @@ public class Controller {
         garbageCollector = new GarbageCollector();
         executor = Executors.newFixedThreadPool(2);
         PrgState state = new PrgState();
-        state.getStack().push(selectController.getStatement());
+        IStmt statement = selectController.getStatement();
+        try {
+            Dictionary<String, Type> typeEnv = new Dictionary<String, Type>();
+
+            statement.typecheck(typeEnv);
+        } catch (ProgramException e) {
+            try {
+                promptErrorWindow(e.getMessage());
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
+        }
+        state.getStack().push(statement);
         repository.add(state);
 
         nrPrgStTxtField.setText(String.valueOf(repository.getLength()));
@@ -113,12 +123,11 @@ public class Controller {
         heapValueColumn.setCellValueFactory(new PropertyValueFactory<HeapTableEntry, Value>("valueColumn"));
 
         runButton.setOnAction(event -> {
-            try {
-                allStep();
-            } catch (ProgramException | InterruptedException | IOException e) {
-                e.printStackTrace();
-            }
+
+            allStep();
+
         });
+        //selectController.hideWindow();
 
     }
 
@@ -134,6 +143,7 @@ public class Controller {
     }
 
     public void showStage() {
+
         mainStage.showAndWait();
     }
 
@@ -173,7 +183,7 @@ public class Controller {
     @FXML
     public void displayPrgDetails() {
         PrgState state = prgStatesListView.getSelectionModel().getSelectedItem();
-        if(state != null) {
+        if (state != null) {
             updateExeStackView(state);
             updateSymTable(state);
         }
@@ -204,7 +214,7 @@ public class Controller {
         updateOutput();
         updateFileTable();
         updatePrgList();
-        System.out.println("update");
+        //System.out.println("update");
 
 
     }
@@ -231,10 +241,17 @@ public class Controller {
                 .map(future -> {
                     try {
                         return future.get();
-                    } catch (Exception ex) {
-                        System.out.println(ex.getMessage());
-                        return null;
+                    } catch (InterruptedException | ExecutionException e) {
+                        try {
+                            promptErrorWindow(e.getMessage());
+                            return null;
+
+                        } catch (IOException ex) {
+                            ex.printStackTrace();
+                            return null;
+                        }
                     }
+
                 })
                 .filter(Objects::nonNull)
                 .collect(Collectors.toList());
@@ -247,30 +264,37 @@ public class Controller {
     }
 
     public void promptErrorWindow(String message) throws IOException {
-        errorStage = new Stage();
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("errorWindow.fxml"));
-        loader.setController(this);
-        errorStage.setScene(new Scene(loader.load()));
-        errorStage.setTitle("Error");
-        errorLabel.setText(message);
-        closeButton.setOnAction(event -> errorStage.close());
-        errorStage.show();
+
+        ErrorController errorController = new ErrorController(message);
+        errorController.showStage();
 
     }
 
-    public void allStep() throws ProgramException, InterruptedException, IOException {
+    public void allStep() {
 
         List<PrgState> prgStateList = removeCompletedPrg(repository.getPrgList());
         if (prgStatesListView.getSelectionModel().getSelectedItem() == null) {
-            promptErrorWindow("Please choose a program state!");
+            try {
+                promptErrorWindow("Please choose a program state!");
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         } else {
-            if (prgStateList.size() > 0) {
-                prgStateList.get(0).getHeap().setContent(garbageCollector.multithreadedGC(prgStateList));
-                oneStepForAllPrg(prgStateList);
-                System.out.println(prgStateList.get(0).toString());
-                prgStateList = removeCompletedPrg(repository.getPrgList());
-                update();
+            try {
+                if (prgStateList.size() > 0) {
+                    prgStateList.get(0).getHeap().setContent(garbageCollector.multithreadedGC(prgStateList));
+                    oneStepForAllPrg(prgStateList);
+                    System.out.println(prgStateList.get(0).toString());
+                    prgStateList = removeCompletedPrg(repository.getPrgList());
+                    update();
 
+                }
+            } catch (Exception e) {
+                try {
+                    promptErrorWindow(e.getMessage());
+                } catch (IOException ex) {
+                    ex.printStackTrace();
+                }
             }
 
 

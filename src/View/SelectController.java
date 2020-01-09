@@ -30,7 +30,9 @@ public class SelectController {
         {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("SelectWindow.fxml"));
             loader.setController(this);
-            selectStage.setScene(new Scene(loader.load()));
+            Scene scene = new Scene(loader.load());
+            scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+            selectStage.setScene(scene);
             selectStage.setTitle("Toy language");
         } catch (IOException e) {
             e.printStackTrace();
@@ -57,18 +59,22 @@ public class SelectController {
 
         return list;
     }
+
     @FXML
-    private void initialize()
-    {
+    private void initialize() {
         selectExampleListView.getItems().addAll(getExampleList());
-        selectExampleButton.setOnAction(event->openMainWindow());
+        selectExampleButton.setOnAction(event -> openMainWindow());
 
     }
 
-    private void openMainWindow()
-    {
-            Controller controller = new Controller(this);
-            controller.showStage();
+    private void openMainWindow() {
+        Controller controller = new Controller(this);
+
+        controller.showStage();
+    }
+
+    public void hideWindow() {
+        selectStage.hide();
     }
 
     public IStmt getStatement() {
