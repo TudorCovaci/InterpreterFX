@@ -52,7 +52,7 @@ public class Controller {
     @FXML
     private ListView<String> outputListView;
     @FXML
-    private ListView<String> exeStackListView;
+    private ListView<IStmt> exeStackListView;
     @FXML
     private ListView<StringValue> fileTableListView;
     @FXML
@@ -74,8 +74,11 @@ public class Controller {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("MainWindow2.fxml"));
             loader.setController(this);
-            mainStage.setScene(new Scene(loader.load()));
+            Scene scene = new Scene(loader.load());
+
+            mainStage.setScene(scene);
             mainStage.setTitle("Toy language");
+
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -147,7 +150,6 @@ public class Controller {
     public void updateExeStackView(PrgState state) {
         exeStackListView.getItems().clear();
         exeStackListView.getItems().addAll(state.getStack().getStatementList());
-
         //state.getStack().getStatementList();
 
     }

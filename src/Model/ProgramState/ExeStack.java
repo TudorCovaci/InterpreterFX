@@ -1,12 +1,9 @@
 package Model.ProgramState;
 
 import Model.Exceptions.ProgramException;
-import Model.Statements.CompStmt;
 import Model.Statements.IStmt;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 import java.util.Stack;
 
 public class ExeStack implements ExeStackInterface<IStmt> {
@@ -34,13 +31,8 @@ public class ExeStack implements ExeStackInterface<IStmt> {
 
     }
 
-    public List<String> getStatementList() {
-
-        String str = toString();
-        String[] strArr = str.split(";");
-
-        List<String> list = new ArrayList<String>(Arrays.asList(strArr));
-
+    public ArrayList<IStmt> getStatementList() {
+        ArrayList<IStmt> list = new ArrayList<>(stack);
         return list;
     }
 
