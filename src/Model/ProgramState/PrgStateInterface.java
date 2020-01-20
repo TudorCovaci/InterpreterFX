@@ -14,4 +14,6 @@ public interface PrgStateInterface {
     FileTable getFileTable();
 
     Heap getHeap();
+
+    BarrierTable getBarrierTable();
 }

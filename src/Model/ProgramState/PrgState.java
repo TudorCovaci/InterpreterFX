@@ -1,9 +1,9 @@
 package Model.ProgramState;
 
-import java.util.concurrent.atomic.AtomicInteger;
-
 import Model.Exceptions.ProgramException;
 import Model.Statements.IStmt;
+
+import java.util.concurrent.atomic.AtomicInteger;
 
 public class PrgState implements PrgStateInterface {
     private ExeStack stack;
@@ -11,6 +11,7 @@ public class PrgState implements PrgStateInterface {
     private Output output;
     private FileTable fileTable;
     private Heap heap;
+    private BarrierTable barrierTable;
 
     static private AtomicInteger counter = new AtomicInteger(0);
     private int id;
@@ -21,6 +22,7 @@ public class PrgState implements PrgStateInterface {
         output = new Output();
         fileTable = new FileTable();
         heap = new Heap();
+        barrierTable = new BarrierTable();
         
         counter.incrementAndGet();
         
@@ -58,6 +60,11 @@ public class PrgState implements PrgStateInterface {
     @Override
     public FileTable getFileTable() {
         return fileTable;
+    }
+
+    @Override
+    public BarrierTable getBarrierTable() {
+        return barrierTable;
     }
 
     @Override
