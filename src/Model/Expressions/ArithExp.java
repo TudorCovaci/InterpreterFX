@@ -49,20 +49,20 @@ public class ArithExp implements Exp {
                     }
                     case '/': {
                         if (secondNumericValue == 0) {
-                            throw new ProgramException("Division by zero");
+                            throw new ProgramException("ArithExp: Division by zero");
                         }
                         return new IntValue(firstNumericValue / secondNumericValue);
                     }
                     default: {
-                        throw new ProgramException("Invalid operator");
+                        throw new ProgramException("ArithExp: Invalid operator");
                     }
                 }
 
             } else {
-                throw new ProgramException("Invalid second operand");
+                throw new ProgramException("ArithExp: Invalid second operand");
             }
         } else {
-            throw new ProgramException("Invalid first operand");
+            throw new ProgramException("ArithExp: Invalid first operand");
         }
     }
 

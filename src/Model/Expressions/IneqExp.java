@@ -72,15 +72,13 @@ public class IneqExp implements Exp {
         Type type1, type2;
         type1 = right.typecheck(typeEnv);
         type2 = left.typecheck(typeEnv);
-        if (type1.equals(new BoolType())) {
-            if (type2.equals(new BoolType())) {
-                return new BoolType();
-            } else {
-                throw new ProgramException("Invalid second operand type");
-            }
+        if (type1.equals(type2)) {
+
+            return new BoolType();
         } else {
-            throw new ProgramException("Invalid first operand type");
+            throw new ProgramException("IneqExp: Invalid operands type");
         }
+
     }
 
 }

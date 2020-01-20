@@ -167,4 +167,28 @@ public class Examples {
                                 )
                         )));
     }
+
+    public IStmt RepeatUntilEx() {
+        Stack<IStmt> list = new Stack<IStmt>();
+        Stack<IStmt> forkStmts = new Stack<IStmt>();
+        Stack<IStmt> repeatStmts = new Stack<>();
+
+        forkStmts.push(new PrintStmt(new VarExp("v")));
+        forkStmts.push(new AssignStmt("v", new ArithExp(new VarExp("v"), new ValueExp(new IntValue(1)), '-')));
+
+        repeatStmts.push(new ForkStmt(listToCompStm(forkStmts)));
+        repeatStmts.push(new AssignStmt("v", new ArithExp(new VarExp("v"), new ValueExp(new IntValue(1)), '+')));
+        list.push(new VarDeclStmt("v", new IntType()));
+        list.push(new VarDeclStmt("x", new IntType()));
+        list.push(new VarDeclStmt("y", new IntType()));
+        list.push(new AssignStmt("v", new ValueExp(new IntValue(0))));
+        list.push(new RepeatUntilStmt(listToCompStm(repeatStmts), new IneqExp("==", new VarExp("v"), new ValueExp(new IntValue(3)))));
+        list.push(new AssignStmt("x", new ValueExp(new IntValue(1))));
+        list.push(new NopStmt());
+        list.push(new AssignStmt("y", new ValueExp(new IntValue(3))));
+        list.push(new NopStmt());
+        list.push(new PrintStmt(new ArithExp(new VarExp("v"), new ValueExp(new IntValue(10)), '*')));
+
+        return listToCompStm(list);
+    }
 }

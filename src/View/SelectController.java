@@ -56,6 +56,7 @@ public class SelectController {
         list.add(exx.HeapAllocationEx());
         list.add(exx.WhileExample());
         list.add(exx.ThreadExample());
+        list.add(exx.RepeatUntilEx());
 
         return list;
     }
